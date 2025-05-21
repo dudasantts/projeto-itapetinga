@@ -1,0 +1,252 @@
+*,*::after,*::before{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    position: sticky;
+  
+}
+
+nav{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2%;
+    margin-left: 38%;
+
+}
+
+nav a{
+    font-family:"Brygada 1918", serif;
+    font-size: xx-large;
+    color: white;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    color: black;
+}
+
+.icon{
+    position: absolute;
+    left: 2%;
+    
+}
+
+.icon img{
+    width: 8vw;
+    height: auto;
+   
+}
+
+.banner{
+    margin-top: -10rem;
+    height: 20vh;
+    transform:  skewY(-5deg);
+    background-color: var(--cordefundo);
+    
+}
+
+.intro{
+    height: 80vh;
+    background: rgb(250,132,0);
+    background: radial-gradient(circle, rgba(250,132,0,1) 0%, rgba(224,194,168,1) 35%, rgba(255,132,0,0.908000700280112) 100%);
+    padding: 100px 0;
+    transform:  skewY(-5deg);
+
+}
+
+.container_intro{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    transform:  skewY(5deg);
+
+}
+
+
+.intro_texto{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1{
+    font-size: 5rem;
+    color: black;
+    margin-bottom: 1rem;
+  
+    
+}
+
+.intro_texto p{
+    font-size: 2.5rem;
+}
+
+.foto{
+    width: 60%;
+   
+}
+
+.foto img{
+    max-width: 100%; 
+    mask-image: url(./svg/asset\ 5.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  
+}
+
+
+
+.icone{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 1.5rem;
+    right: 3.5rem;
+    z-index: 5;
+    border-radius: 50%;
+    border: none;
+    display:none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.menu{
+    background-color: rgb(255, 153, 0);
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;    
+
+
+    .icone2{
+        width: 4rem;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        background: none;
+        border: none;
+        z-index: 9999;   
+
+    }
+    
+    
+    ul{
+        display: none;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        
+        li:not(:last-child){
+            margin-bottom:2rem;
+        }
+
+        a{
+            font-family:"Brygada 1918", serif;
+            font-size: xx-large;
+            color: white;
+            text-decoration: none;
+            
+        }
+        
+    }
+
+}
+
+
+@keyframes animacao {
+    
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 100%;
+        display: "block";
+    }
+    
+}
+
+
+@keyframes animacao2 {
+
+    0%{
+        width: 100%;
+        
+    }
+
+    100%{
+        width: 0;
+        display: "none";
+    }
+
+    
+}
+
+@media screen and (max-width:800px) {
+
+    .container_intro{
+        display: block;
+    }
+
+    .intro_texto{
+        margin-bottom: 2rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .intro_texto p{
+        font-size: 2rem;
+    }
+
+    .intro_texto, .foto{
+
+        width: 100%;
+
+    }
+
+    nav{
+        display: none;
+    }
+
+    .icone{
+        display: block;
+    }
+
+ 
+    .icon img{
+        width: 20vw;
+        padding-top: 2rem;
+    }
+
+    .banner{
+        margin-top: -2rem;
+    }
+    
+}
+
+
+
+
+
+
+
+

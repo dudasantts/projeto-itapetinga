@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">  <!--links fontes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!--link animação-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/> 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <link rel="shortcut icon" href="./img/ita_logo-removebg-preview.png" type="image/x-icon">
+     <link rel="stylesheet" href="style.css">
+    <title>Itapetinga</title>
+</head>
+<body>
+
+    <button type="button" id="icone" class="icone"><img src="./img/hamburger.png" alt=""></button>
+
+    <div class="menu" id="icone2">
+
+        <button type="button"  class="icone2"><img src="./img/x.png" alt=""></button>
+        <ul>
+            <li><a id="inicio" href="#nav_inicio">Inicío</a></li>
+            <li><a id="sobre" href="#nav_about">Sobre</a></li>
+            <li><a id="passeio" href="#nav_passeios">Passeios</a></li>
+            <li><a id="localizacao" href="#nav_localizacao">Localização</a></li>
+            <li><a id="contatos"  href="#nav_contatos">Contatos</a></li>
+        </ul>
+    </div>
+    
+    <!-- <svg class="linha"  fill="none" preserveAspectRatio="xMidYMax meet" viewBox="-1.44946 0 16.3 34">
+        <path d="M 0 0 C -8 17 19 20 13 37 C 11 44 8 50 0 59" />
+    </svg>
+    <svg class="linha2"  fill="none" preserveAspectRatio="xMidYMax meet" viewBox="-1.44946 0 16.3 34">
+        <path d="M 0 0 C -8 17 16 46 0 69 C -36 124 30 103 0 151" />
+    </svg>
+    <svg class="linha3"  fill="none" preserveAspectRatio="xMidYMax meet" viewBox="-1.44946 0 16.3 34">
+        <path d="M 0 0 C -8 17 25 48 1 109 C -54 190 37 211 0 306" />
+    </svg> -->
+
+    <header>
+        <div class="icon">
+            <img src="./img/logo-remove.png" alt="">
+
+        </div>
+        <nav class="nav" >
+             <a id="sobre" href="#nav_about">Sobre</a>
+             <a id="passeio" href="#nav_passeios">Passeios</a>
+             <a id="localizacao" href="#nav_localizacao">Localização</a>
+             <a id="contatos"  href="#nav_contatos">Contatos</a>
+        </nav>
+        
+
+    </header>
+
+    <section id="nav_inicio" class="banner"></section>
+
+    <section class="intro">
+        <div class="container_intro">
+             <div class="intro_texto animate__animated animate__zoomIn">
+                <h1>Itapetinga</h1>
+                <p>A Capital da Pecuária.</p>
+             </div>
+             <div class="foto">
+                 <img src="./img/cidade.jpg" alt="">
+             </div>
+        </div>
+    </section>
+
+     <section class="container">
+        <div  id="nav_about"  class="about">
+            <div class="foto2">
+                <img src="./img/centro.jfif" alt="">
+            </div>
+            <div class="texto_sobre">
+                <h3>Bem vindo a Itapetinga!</h3>
+                <p>Itapetinga é um município brasileiro no interior da Bahia. Pertence a Mesorregião do Centro-Sul Baiano e a Microrregião de Itapetinga.</p>
+            </div> 
+        </div>
+       </section>
+    
+
+    <section  id="nav_passeios"  class="passeios">
+        <div class="caixa">
+           <div class="box">
+            <div class=" card">
+                <div class=" card_side 
+                 card_side--front
+                 card_side--front-1">
+                    <div class="card-picture card-picture-1">
+                        &nbsp;
+
+                        <div style="height: 10rem; position: absolute;
+                            bottom:0;  width: 100%; overflow: hidden;" >
+                            <svg viewBox="0 0 500 150" 
+                            preserveAspectRatio="none" 
+                            style="height: 100%; width: 100%;">
+                                <path d="M-3.11,95.02 C150.00,150.00 
+                                    181.43,36.80 500.00,49.98 L500.00,150.00 
+                                    L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="card-heading">
+                       <span class="heading-span heading-span-1">Igrejinha de pedra</span>                         
+                    </h4>
+                    <div class="card-details">
+                        <ul>
+                            <li>Capela do Menino Jesus</li>
+                            <li>Local histórico</li>
+                            <li>Aberto domingos e feriados</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class=" card_side 
+                 card_side--back
+                 card_side--back-1">
+                    <div class="card-cta">
+                        <div class="card-box">
+                            <p class="card-title">Dúvidas?</p>
+                            <p class="card-text">Entre em contato</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="blob-btn">
+                              Mais
+                              <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                </span>
+                              </span>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="box">
+            <div class=" card">
+                <div class=" card_side 
+                 card_side--front
+                 card_side--front-2">
+                    <div class="card-picture card-picture-2">
+                        &nbsp;
+
+                        <div style="height: 10rem; position: absolute;
+                            bottom:0;  width: 100%; overflow: hidden;" >
+                              <svg viewBox="0 0 500 150" 
+                              preserveAspectRatio="none" 
+                              style="height: 100%; width: 100%;">
+                                  <path d="M-3.11,95.02 C150.00,150.00 
+                                      181.43,36.80 500.00,49.98 L500.00,150.00 
+                                      L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+                                  </path>
+                              </svg>
+                        </div>
+                    </div>
+                    <h4 class="card-heading">
+                       <span class="heading-span heading-span-2">Lagoa</span>                         
+                    </h4>
+                    <div class="card-details">
+                        <ul>
+                            <li>Parque Poliesportivo</li>
+                            <li>Restaurante à beira da lagoa</li>
+                            <li>São João</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class=" card_side 
+                 card_side--back
+                 card_side--back-2">
+                    <div class="card-cta">
+                        <div class="card-box">
+                            <p class="card-title">Dúvidas?</p>
+                            <p class="card-text">Entre em contato</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="blob-btn">
+                                Mais
+                                <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                </span>
+                              </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="box">
+            <div class=" card">
+                <div class=" card_side 
+                 card_side--front
+                 card_side--front-3">
+                    <div class="card-picture card-picture-3">
+                        &nbsp;
+
+                        <div style="height: 10rem; position: absolute;
+                            bottom:0;  width: 100%; overflow: hidden;" >
+                            <svg viewBox="0 0 500 150" 
+                            preserveAspectRatio="none" 
+                            style="height: 100%; width: 100%;">
+                                <path d="M-3.11,95.02 C150.00,150.00 
+                                    181.43,36.80 500.00,49.98 L500.00,150.00 
+                                    L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="card-heading">
+                       <span class="heading-span heading-span-3">Matinha</span>                         
+                    </h4>
+                    <div class="card-details">
+                        <ul>
+                            <li>Parque Zoobotânico</li>
+                            <li>Conservação ambiental</li>
+                            <li>Aberto todos os domingos</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class=" card_side 
+                 card_side--back
+                 card_side--back-3">
+                    <div class="card-cta">
+                        <div class="card-box">
+                            <p class="card-title">Dúvidas?</p>
+                            <p class="card-text">Entre em contato</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="blob-btn">
+                                Mais
+                                <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                </span>
+                              </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+
+           
+            
+
+        </div>
+
+    </section>
+    
+    <section class="separador">
+            
+    </section>
+    <section id="nav_localizacao"  class="localizacao">
+        <div class="mapa">
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section class="faixa"></section>
+    
+    <footer id="nav_contatos" class="footer">
+        <div class="faixa"></div>
+
+        <div class="container_footer">
+            <div class="item1">
+                <h6>Entre em Contato</h6>
+                <form  class="form" >
+                    <label for="fname">Nome:</label><br>
+                    <input type="text"  id="fname" name="fname"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="mensagem">Mensagem:</label><br> 
+                    <textarea placeholder="Digite sua mensagem" rows="6" cols="50" class="messagem" required=""></textarea> 
+                    <button type="button" class="btn"><a href="">Enviar</a>
+                    </button>
+                </form>
+                  
+            </div>
+            <div class="container_item2">
+                <div class="item2">
+                    <h5>Nossas redes sociais:</h5>
+                    <div class="rede_social">
+                        <a class="img_redeSocial" href="https://www.instagram.com/" target="_blank"> <img src="./img/instagram.png" alt=""></a>
+                        <a class="img_redeSocial" href="https://www.facebook.com/?locale=pt_BR" target="_blank">  <img src="./img/facebook.png" alt=""></a>
+                    </div>
+                    <h5>Contatos:</h5>
+                    <p>(77) 3261-8300</p>
+                    <p>(77) 9 9905-0689</p>
+                </div>
+            </div>
+            <div class="container_item3">
+                <div class="item3">
+                    <h5>Email:</h5>
+                    <p>itapetinga.ba@gmail.com</p>
+                    <p>cidadeita@gmail.com</p>
+                    <h5>Endereço:</h5>
+                    <p>Praça Dairy Valley, 338, Centro - Itapetinga - Bahia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script> 
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>

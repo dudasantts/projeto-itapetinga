@@ -1,0 +1,19 @@
+.separador{
+    height: 20vh;
+    background-color: #032657;
+    transform:  skewY(5deg);
+    z-index: 2;
+}
+
+.faixa{
+    width: 100%;
+    height: 15vh;
+    background-color:#032657 ;
+    position: absolute;
+    margin-top: 8%;
+    transform:  skewy(15deg);
+    z-index: 1;
+
+}
+
+

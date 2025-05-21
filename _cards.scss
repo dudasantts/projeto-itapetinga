@@ -1,0 +1,300 @@
+.passeios{
+    padding-top: 8%;
+    padding: 5rem 0;
+
+}
+
+
+.caixa{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+
+.box{
+    max-width: 500px;
+    width: 480px;
+    height: 70vh;
+    
+}
+
+.box1 img, .box2 img, .box3 img{
+    width: 100%;
+    height: 28vh;
+
+}
+
+
+.box1 h4, .box2 h4, .box3 h4{
+    font-size: xx-large;
+
+}
+
+
+
+
+.box1 p, .box2 p, .box3 p{
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 0 10%;
+
+}
+
+
+
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    &_side{
+        
+        height: 100%;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
+
+        border-radius: .4rem;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000,.15);
+
+        &--front{
+            background-color: white;
+            color:#000;
+
+            &-1{
+                border: .15rem solid rgba(rgb(255, 123, 0),.3);
+
+            }
+
+            &-2{
+                border: .15rem solid rgba(rgb(255, 123, 0),.3);
+
+            }
+
+
+            &-3{
+                border: .15rem solid rgba(rgb(255, 123, 0),.3);
+
+            }
+
+            
+
+        }
+
+        &--back{
+            transform: rotateY(180deg);
+
+
+            &-1{
+                background-image: 
+                linear-gradient(to right bottom,
+                rgba(#FFB900,.5),
+                rgba(rgb(255, 123, 0),.5));
+
+            }
+
+            &-2{
+                background-image: 
+                linear-gradient(to right bottom,
+                rgba(#4574FF,.5),
+                rgba(rgb(255, 123, 0),.5));
+
+            }
+
+            &-3{
+                background-image: 
+                linear-gradient(to right bottom,
+                rgba(#FFB900,.5),
+                rgba(#4574FF,.5));
+
+            }
+
+
+
+        }
+    }
+
+    &:hover &_side--front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &_side--back{
+        transform: rotateY(0);
+    }
+
+
+    
+    .card-picture{
+        background-size: cover;
+        height: 20rem;
+        background-blend-mode: screen;
+        
+
+        &-1{
+            position: relative;
+            background-image: linear-gradient(to right bottom,
+            rgba(#FFB900,.5),
+            rgba(rgb(255, 123, 0),.5)), url(./img/Igrejinha\ de\ pedra.jpg);
+        } 
+
+        &-2{
+            position: relative;
+            background-image: linear-gradient(to right bottom,
+            rgba(#4574FF,.5),
+            rgba(rgb(255, 123, 0),.5)), url(./img/Lagoa.jpg);
+        } 
+
+        &-3{
+            position: relative;
+            background-image: linear-gradient(to right bottom,
+            rgba(#FFB900,.5),
+            rgba(#4574FF,.5)), url(./img/matinha.jpg);
+        } 
+    }
+
+
+    .card-heading{
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color:white;
+        position: absolute;
+        top: 15.5rem;
+        right: 2rem;
+
+    }
+
+
+    .heading-span{
+
+        &-1{
+            padding: 1rem 1.5rem;
+            -webkit-box-decoration-break: clone;
+            line-height: 3.5rem;
+
+
+            box-decoration-break: clone;
+            
+            background-image: linear-gradient(to right bottom,
+            rgba(#FFB900,.8),
+            rgba(rgb(255, 123, 0),.8));
+
+        } 
+        
+        &-2{
+            padding: 1rem 1.5rem;
+            -webkit-box-decoration-break: clone;
+            line-height: 3.5rem;
+
+
+            box-decoration-break: clone;
+            
+            background-image: linear-gradient(to right bottom,
+            rgba(#4574FF,.8),
+            rgba(rgb(255, 123, 0),.8));
+
+        } 
+
+        &-3{
+            padding: 1rem 1.5rem;
+            -webkit-box-decoration-break: clone;
+            line-height: 3.5rem;
+
+
+            box-decoration-break: clone;
+            
+            background-image: linear-gradient(to right bottom,
+            rgba(#FFB900,.8),
+            rgba(#4574FF,.8));
+
+        } 
+
+       
+        
+    }
+
+    .card-details{
+
+        padding: 1.5rem;
+        margin-top: 3.5rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+
+            li{
+                text-align: center;
+                line-height: 1.5;
+                font-size: clamp(1.2rem, 1.5vw, 2rem);
+                padding: .3rem;
+                border-bottom: .1rem solid #f77903be ;
+
+            }
+        }
+
+        p{
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            font-size: 5rem;
+            padding: .3rem;
+       }
+    }
+
+
+    .card-cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 85%;
+        text-align: center;
+
+    
+        .card-box{
+            text-align: center;
+            color: black;
+            margin-bottom: 6rem;
+
+        }
+
+        .card-title{
+            font-size: 4.5rem;
+            font-weight: 100;
+        }
+
+        .card-text{
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+    }
+
+    
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .box{
+        max-width: 450px;
+        width: 80%;
+        height: 80vh;
+        
+    }
+    
+}

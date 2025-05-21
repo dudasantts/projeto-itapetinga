@@ -1,0 +1,31 @@
+.localizacao {
+    height: 78vh;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.mapa {
+    // max-width: 90vw;
+    width: 80vw;
+    height: 79vh;
+    border: 5px solid;
+    z-index: 2;
+    
+
+}
+
+#map {
+    height: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .mapa {
+        height: 60vh;
+        margin-top: 15%;
+    }
+}
