@@ -406,13 +406,15 @@ nav {
 
 nav a {
   font-family: "Brygada 1918", serif;
-  font-size: xx-large;
+  font-size: 1.8em;
   color: white;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: black;
+  background-color: white;
+  color: #F76103;
+  border-radius: 10px;
 }
 
 .icon {
