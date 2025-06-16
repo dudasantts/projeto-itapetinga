@@ -400,7 +400,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 38%;
 }
 
@@ -409,12 +409,14 @@ nav a {
   font-size: 1.8em;
   color: white;
   text-decoration: none;
+  padding: 10px;
 }
 
 nav a:hover {
   background-color: white;
   color: #F76103;
   border-radius: 10px;
+  transition-duration: 0.8s;
 }
 
 .icon {
