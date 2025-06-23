@@ -26,18 +26,18 @@
 body{
     position: relative;
 
-    // svg.linha{
-    //   position: absolute;
-    //   top: 0.5rem;
-    //   left: 0;
-    //   z-index: -1;
-    //   stroke:#f76103;
-    //   overflow: hidden;
+    svg.linha{
+      position: absolute;
+      top: 0.5rem;
+      left: 0;
+      z-index: -1;
+      stroke:#f76103;
+      overflow: hidden;
 
-    //  path{
-    //      stroke-width: 3px;
-    //   }
-    // }
+     path{
+         stroke-width: 3px;
+      }
+    }
 
 }
 

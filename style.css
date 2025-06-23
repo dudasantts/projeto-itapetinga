@@ -329,6 +329,7 @@ p {
   border: 1px solid rgba(209, 213, 219, 0.3);
   position: relative;
   transform: skewY(5deg);
+  z-index: 2;
 }
 
 .foto2 {
@@ -804,6 +805,17 @@ input {
 
 body {
   position: relative;
+}
+body svg.linha {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  z-index: -1;
+  stroke: #f76103;
+  overflow: hidden;
+}
+body svg.linha path {
+  stroke-width: 3px;
 }
 
 html.lenis, html.lenis body {

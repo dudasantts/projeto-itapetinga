@@ -20,68 +20,68 @@ function raf(time) {
   requestAnimationFrame(raf)
 
 
-//   if (screen.width < 640) { 
+  if (screen.width < 640) { 
 
-//     const path3 = document.querySelector('svg.linha3 path');
-//     path3.style.opacity = "1";
-//     const pathSize3 = path3.getTotalLength();
+    const path3 = document.querySelector('svg.linha3 path');
+    path3.style.opacity = "1";
+    const pathSize3 = path3.getTotalLength();
     
    
     
-//     path3.style.strokeDasharray = pathSize3 + ' ' + pathSize3;
-//     path3.style.strokeDashoffset = pathSize3;
+    path3.style.strokeDasharray = pathSize3 + ' ' + pathSize3;
+    path3.style.strokeDashoffset = pathSize3;
     
     
-//     lenis.on('scroll', (e) => {
+    lenis.on('scroll', (e) => {
     
-//         var scroolPorcentagem = (document.documentElement.scrollTop + document.body.scrollTop ) / (document.documentElement.scrollHeight - document.documentElement.clientHeight );
-//         var velocidade = scroolPorcentagem * 4;
-//         var desenha = pathSize3 * velocidade;
-//         path3.style.strokeDashoffset = pathSize3 - desenha;
+        var scroolPorcentagem = (document.documentElement.scrollTop + document.body.scrollTop ) / (document.documentElement.scrollHeight - document.documentElement.clientHeight );
+        var velocidade = scroolPorcentagem * 4;
+        var desenha = pathSize3 * velocidade;
+        path3.style.strokeDashoffset = pathSize3 - desenha;
     
-//         console.log(path3)
+        console.log(path3)
     
-//     }
-//     )} else if (screen.width < 800 ) {
-//         const path2 = document.querySelector('svg.linha2 path');
-//         const pathSize2 = path2.getTotalLength();
+    }
+    )} else if (screen.width < 800 ) {
+        const path2 = document.querySelector('svg.linha2 path');
+        const pathSize2 = path2.getTotalLength();
         
         
-//         path2.style.strokeDasharray = pathSize2 + ' ' + pathSize2;
-//         path2.style.strokeDashoffset = pathSize2;
+        path2.style.strokeDasharray = pathSize2 + ' ' + pathSize2;
+        path2.style.strokeDashoffset = pathSize2;
         
         
-//         lenis.on('scroll', (e) => {
+        lenis.on('scroll', (e) => {
         
-//             var scroolPorcentagem = (document.documentElement.scrollTop + document.body.scrollTop ) / (document.documentElement.scrollHeight - document.documentElement.clientHeight );
-//             var velocidade = scroolPorcentagem * 3;
-//             var desenha = pathSize2 * velocidade;
-//             path2.style.strokeDashoffset = pathSize2 - desenha;
+            var scroolPorcentagem = (document.documentElement.scrollTop + document.body.scrollTop ) / (document.documentElement.scrollHeight - document.documentElement.clientHeight );
+            var velocidade = scroolPorcentagem * 3;
+            var desenha = pathSize2 * velocidade;
+            path2.style.strokeDashoffset = pathSize2 - desenha;
         
        
-//         }
+        }
 
-//     )}
-//      else {
-//             const path = document.querySelector('svg.linha path');
-//             path.style.opacity = "1";
+    )}
+     else {
+            const path = document.querySelector('svg.linha path');
+            path.style.opacity = "1";
 
-//             const pathSize = path.getTotalLength();
+            const pathSize = path.getTotalLength();
             
             
-//             path.style.strokeDasharray = pathSize + ' ' + pathSize;
-//             path.style.strokeDashoffset = pathSize;
+            path.style.strokeDasharray = pathSize + ' ' + pathSize;
+            path.style.strokeDashoffset = pathSize;
             
             
-//             lenis.on('scroll', (e) => {
+            lenis.on('scroll', (e) => {
             
-//                 var scroolPorcentagem = (document.documentElement.scrollTop + document.body.scrollTop ) / (document.documentElement.scrollHeight - document.documentElement.clientHeight );
-//                 var velocidade = scroolPorcentagem * 0.6;
-//                 var desenha = pathSize * velocidade;
-//                 path.style.strokeDashoffset = pathSize - desenha;
+                var scroolPorcentagem = (document.documentElement.scrollTop + document.body.scrollTop ) / (document.documentElement.scrollHeight - document.documentElement.clientHeight );
+                var velocidade = scroolPorcentagem * 0.6;
+                var desenha = pathSize * velocidade;
+                path.style.strokeDashoffset = pathSize - desenha;
 
-//             }
-//         )}
+            }
+        )}
         
 
 $(document).ready(function(){
